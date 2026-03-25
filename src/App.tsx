@@ -214,7 +214,7 @@ function App() {
 
   return (
     <main className="px-5 pb-16 pt-5 sm:px-6 lg:px-5 xl:px-6">
-      <div className="mx-auto max-w-layout">
+      <div className="mx-auto w-full lg:max-w-[60vw]">
         <section className="grid gap-10 lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-[72px] xl:grid-cols-[286px_minmax(0,1fr)]">
           <motion.aside {...reveal} className="lg:sticky lg:top-5 lg:self-start">
             <div className="space-y-5">
@@ -326,13 +326,12 @@ function App() {
                       }}
                       className={`group flex min-h-[210px] flex-col justify-end overflow-hidden rounded-[17px] border border-[#d8dcdf] bg-gradient-to-br ${project.tone} p-[14px] shadow-[0_1px_2px_rgba(15,23,32,0.04)] transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-[198px] lg:min-h-[198px]`}
                     >
-                      <div className="mb-auto h-full rounded-[15px] border border-white/35 bg-white/10" />
-                      <div className="space-y-1 pt-4 text-ink">
-                        <h2 className="text-[18px] tracking-[-0.025em] lg:text-[17px] xl:text-[18px]">
+                      <div className="space-y-1 text-ink">
+                        <h2 className="text-[16px] tracking-[-0.025em]">
                           {project.title}
                         </h2>
                         {project.category ? (
-                          <p className="text-[14px] text-ink/85">{project.category}</p>
+                          <p className="text-[16px] text-ink/85">{project.category}</p>
                         ) : null}
                       </div>
                     </motion.article>
